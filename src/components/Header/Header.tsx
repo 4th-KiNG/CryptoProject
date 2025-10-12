@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { MENU_LINKS } from "src/constants/menu";
 
 const Header = () => {
-  const [isOpenMenu, setOpenMenu] = useState(false);
+  const [isOpenMenu] = useState(false);
   return (
     <div className={styles.Header}>
       <div className={styles.Logo}>Logo</div>
