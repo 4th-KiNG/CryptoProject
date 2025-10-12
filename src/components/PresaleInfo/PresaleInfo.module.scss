@@ -1,0 +1,94 @@
+.PresaleInfo {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.Title {
+  font-size: 64px;
+  font-weight: 600;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.Table {
+  min-width: 1200px;
+  width: 100%;
+
+  padding: 0 20px;
+  border-collapse: separate;
+  border-spacing: 0 16px;
+  row-gap: 16px;
+  @media (max-width: 768px) {
+    row-gap: 12px;
+  }
+  &_Heads {
+    & > th {
+      width: max-content;
+      font-size: 16px;
+      font-weight: 600;
+      color: #a1a1a1;
+    }
+  }
+  &_Line {
+    background-color: #30302b;
+    height: 80px;
+    @media (max-width: 768px) {
+      height: 50px;
+    }
+    & > td {
+      &:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        @media (max-width: 768px) {
+          border-top-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+        }
+      }
+      &:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        @media (max-width: 768px) {
+          border-top-right-radius: 16px;
+          border-bottom-right-radius: 16px;
+        }
+      }
+      & > div {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 auto;
+        width: max-content;
+        & > span {
+          font-size: 12px;
+          color: #a1a1a1;
+        }
+        @media (max-width: 768px) {
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+    &_Price {
+      & > div {
+        background-color: #191917;
+        padding: 10px 16px;
+        width: max-content;
+        border-radius: 100px;
+
+        @media (max-width: 768px) {
+          padding: 8px 11px;
+        }
+      }
+    }
+  }
+}
+
+.TableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

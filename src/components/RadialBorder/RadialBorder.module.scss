@@ -1,0 +1,60 @@
+.GlowBox {
+  position: relative;
+  border-radius: 20px;
+  /* тёмный фон как на вашем примере */
+  background: #2f2f2a;
+  color: #fff;
+  overflow: visible;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -2px; /* толщина рамки = 2px */
+    border-radius: 22px; /* немного больше, чем у элемента */
+    pointer-events: none;
+    z-index: 0;
+
+    /* Слои:
+     1) Тёмный радиальный градиент (использует #30302B -> #7B7B7B)
+     2) Пурпурный бликовый градиент (#E9D3FF)
+     3) Тонкая общая линия/тон для ощущения "рамки" (опционально)
+  */
+    background:
+    /* тёмный угол/обводка — похож на металлическую/серую кромку */ radial-gradient(
+        circle at 10% 10%,
+        rgba(48, 48, 43, 0.95) 0%,
+        rgba(123, 123, 123, 0.2) 40%,
+        rgba(123, 123, 123, 0.06) 55%,
+        rgba(123, 123, 123, 0) 65%
+      ),
+      /* пурпурный бликовый свет справа/сверху — использует #E9D3FF */
+        radial-gradient(
+          circle at 82% 18%,
+          rgba(233, 211, 255, 0.9) 0%,
+          rgba(233, 211, 255, 0.55) 12%,
+          rgba(233, 211, 255, 0.08) 28%,
+          rgba(233, 211, 255, 0) 42%
+        ),
+      /* тонкая серовато-металлическая линия для контраста */
+        linear-gradient(
+          180deg,
+          rgba(123, 123, 123, 0.35),
+          rgba(123, 123, 123, 0.22)
+        );
+    background-blend-mode: screen;
+    filter: blur(0.8px); /* немного смягчает градиенты */
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px; /* тот же радиус что и .glow-box */
+    background: #2f2f2a; /* должен совпадать с фоном .glow-box */
+    z-index: 1;
+  }
+}
+
+.GlowContent {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}

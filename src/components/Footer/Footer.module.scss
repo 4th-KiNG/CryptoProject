@@ -1,0 +1,73 @@
+.Footer {
+  padding: 55px 44px;
+  background-color: #7b7b7b80;
+  margin-top: 160px;
+  display: flex;
+  @media (max-width: 768px) {
+    margin-top: 80px;
+    padding: 20px 18px;
+  }
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 90px;
+}
+
+.Logo {
+  font-size: 64px;
+  font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.Info {
+  display: flex;
+  gap: 170px;
+  @media (max-width: 768px) {
+    gap: 36px;
+  }
+}
+
+.NavMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+  &_Link {
+    font-size: 20px;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+  & > h6 {
+    font-size: 20px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  & > p {
+    font-size: 20px;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

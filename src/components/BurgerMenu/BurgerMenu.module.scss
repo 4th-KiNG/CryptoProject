@@ -1,0 +1,14 @@
+.BurgerMenu {
+  display: none;
+  flex-direction: column;
+  width: 16px;
+  gap: 3px;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  & > div {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+  }
+}

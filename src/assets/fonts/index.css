@@ -1,0 +1,32 @@
+/* NTSomic Regular (400) */
+@font-face {
+  font-family: "NTSomic";
+  src: url("./NTSomic-Regular.woff2") format("woff2"),
+    url("./NTSomic-Regular.ttf") format("truetype"),
+    url("./NTSomic-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NTSomic Medium (500) */
+@font-face {
+  font-family: "NTSomic";
+  src: url("./NTSomic-Medium.woff2") format("woff2"),
+    url("./NTSomic-Medium.ttf") format("truetype"),
+    url("./NTSomic-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NTSomic Bold (700) */
+@font-face {
+  font-family: "NTSomic";
+  src: url("./NTSomic-Bold.woff2") format("woff2"),
+    url("./NTSomic-Bold.ttf") format("truetype"),
+    url("./NTSomic-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

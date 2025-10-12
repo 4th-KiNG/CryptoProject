@@ -1,0 +1,56 @@
+.Header {
+  padding: 20px 58px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7b7b7b80;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  @media (max-width: 768px) {
+    padding: 12px 18px;
+  }
+}
+
+.Logo {
+  font-size: 28px;
+  font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.NavMenu {
+  display: flex;
+  gap: 72px;
+  align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+}
+
+.GetStarted {
+  padding: 12px 24px;
+  background-color: #894eff;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+.LeftBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ActiveMenu {
+  display: flex !important;
+}

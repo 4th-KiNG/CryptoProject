@@ -1,0 +1,152 @@
+.Sui {
+  margin-top: 40px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 0 40px;
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.Title {
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.Description {
+  font-size: 32px;
+  font-weight: 500;
+  color: #a1a1a1;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.GetStarted {
+  font-size: 32px;
+  font-weight: 500;
+  padding: 18px 32px;
+  background-color: #894eff;
+  border-radius: 50px;
+  border: 0px;
+  outline: 0px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.Blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+  max-width: 1200px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.InfoBlock {
+  height: 400px;
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  outline: 2px solid #7b7b7b;
+  @media (max-width: 1000px) {
+    height: 300px;
+    border-radius: 32px;
+  }
+  @media (max-width: 1000px) {
+    height: 220px;
+  }
+  &_Gif {
+    position: absolute;
+    width: 120%;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+  }
+  &_FullText {
+    height: 100% !important;
+  }
+  &_Text {
+    padding: 40px;
+    background-color: #30302b;
+    position: relative;
+    z-index: 2;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 1000px) {
+      padding: 16px;
+    }
+  }
+  &_Main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 1000px) {
+      gap: 12px;
+    }
+    & > p {
+      font-size: 28px;
+      font-weight: 600;
+      @media (max-width: 1000px) {
+        font-size: 20px;
+      }
+    }
+    & > span {
+      font-size: 20px;
+      font-weight: 500;
+      color: #a1a1a1;
+      @media (max-width: 1000px) {
+        font-size: 12px;
+      }
+    }
+  }
+  &_Buttons {
+    display: flex;
+    gap: 12px;
+    &_Active {
+      background-color: #894eff !important;
+      color: white !important;
+    }
+    & > button {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 12px 24px;
+      background-color: #a2a499;
+      color: black;
+      outline: 0;
+      border: 0;
+      border-radius: 100px;
+      @media (max-width: 1000px) {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
