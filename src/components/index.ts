@@ -12,3 +12,6 @@ export * from "./Slider";
 export * from "./Carousel";
 export * from "./SupportedBy";
 export * from "./Listing";
+export * from "./RaceTrack";
+export * from "./BlockChainRace";
+export * from "./BlocksChart";

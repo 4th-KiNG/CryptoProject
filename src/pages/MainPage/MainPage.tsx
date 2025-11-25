@@ -1,5 +1,6 @@
 import {
   BlockchainBars,
+  BlockchainDashboard,
   Carousel,
   Economy,
   Footer,
@@ -18,6 +19,7 @@ const MainPage = () => {
       <Header />
       <Introduction />
       <PresaleInfo />
+      <BlockchainDashboard />
       <Sui />
       <Economy />
       <BlockchainBars />
