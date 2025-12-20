@@ -15,3 +15,7 @@ export * from "./Listing";
 export * from "./RaceTrack";
 export * from "./BlockChainRace";
 export * from "./BlocksChart";
+export * from "./SocialMedia";
+export * from "./FAQ";
+export * from "./AccordeonList";
+export * from "./Input";

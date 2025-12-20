@@ -7,7 +7,7 @@ import type { ChartPoint } from "src/types/bars";
 function calcBlocks(t: number): Record<string, number> {
   const result: Record<string, number> = {};
   CHAINS.forEach((c) => {
-    result[c.id] = c.blocksPerSec * t;
+    result[c.id] = Math.floor(c.blocksPerSec * t);
   });
   return result;
 }
@@ -57,20 +57,22 @@ const BlockchainDashboard: FC = () => {
   };
 
   return (
-    <div className={styles.Race}>
-      <div className={styles.Race_Header}>
-        <h2>Blockchain Speed Comparison</h2>
-        <button className={styles.Race_Reset} onClick={handleReset}>
-          Reset
-        </button>
-      </div>
+    <div className={styles.DashBoard}>
+      <div className={styles.Race}>
+        <div className={styles.Race_Header}>
+          <h2>Blockchain Speed Comparison</h2>
+          <button className={styles.Race_Reset} onClick={handleReset}>
+            Reset
+          </button>
+        </div>
 
-      <div className={styles.Race_Tracks}>
-        {CHAINS.map((chain) => (
-          <RaceTrack key={chain.id} chain={chain} time={time} />
-        ))}
+        <div className={styles.Race_Tracks}>
+          {CHAINS.map((chain) => (
+            <RaceTrack key={chain.id} chain={chain} time={time} />
+          ))}
+        </div>
+        <BlocksChart chains={CHAINS} data={data} />
       </div>
-      <BlocksChart chains={CHAINS} data={data} />
     </div>
   );
 };

@@ -12,16 +12,15 @@
 }
 
 .Blur {
-  background: #a619f7a6;
+  background: #6011ff;
   border-radius: 90px;
   filter: blur(250px);
   flex-shrink: 0;
-  height: 300px;
-  left: 50%;
+  height: 600px;
+  left: 0;
   position: absolute;
-  top: -100px;
-  transform: translateX(-50%);
-  width: 50vw;
+  transform: translateY(-70%);
+  width: 100vw;
   z-index: 0;
 }
 
@@ -38,14 +37,8 @@
 }
 
 .Title {
-  font-size: 120px;
-  font-weight: 600;
-  text-align: center;
-  & > span {
-    background-image: linear-gradient(to right, #e9d3ff, #894eff);
-    background-clip: text;
-    color: transparent;
-  }
+  max-width: 600px;
+  width: 100%;
   @media (max-width: 768px) {
     font-size: 40px;
   }
@@ -72,6 +65,7 @@
     border-radius: 50px;
     font-size: 32px;
     font-weight: 500;
+    line-height: 22px;
     @media (max-width: 768px) {
       font-size: 16px;
       padding: 10px 20px;
@@ -85,6 +79,7 @@
     border-radius: 50px;
     font-size: 32px;
     font-weight: 500;
+    line-height: 22px;
     @media (max-width: 768px) {
       font-size: 16px;
       padding: 10px 20px;

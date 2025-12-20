@@ -3,11 +3,13 @@ import {
   BlockchainDashboard,
   Carousel,
   Economy,
+  FAQ,
   Footer,
   Header,
   Introduction,
   Listing,
   PresaleInfo,
+  SocialMedia,
   Sui,
   SupportedBy,
 } from "src/components";
@@ -26,6 +28,8 @@ const MainPage = () => {
       <Carousel />
       <SupportedBy />
       <Listing />
+      <SocialMedia />
+      <FAQ />
       <Footer />
     </div>
   );

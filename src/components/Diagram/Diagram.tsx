@@ -1,5 +1,7 @@
 import ReactECharts, { type EChartsOption } from "echarts-for-react";
+import { logoIcon } from "src/assets";
 import { diagramData } from "src/constants/economy";
+import styles from "./Diagram.module.scss";
 
 const Diagram = ({ className }: { className?: string }) => {
   const options: EChartsOption = {
@@ -33,7 +35,12 @@ const Diagram = ({ className }: { className?: string }) => {
       },
     ],
   };
-  return <ReactECharts className={className} option={options} />;
+  return (
+    <div className={styles.Container}>
+      <img src={logoIcon} alt="logo icon" className={styles.LogoIcon} />
+      <ReactECharts className={className} option={options} />
+    </div>
+  );
 };
 
 export default Diagram;

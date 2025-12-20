@@ -1,10 +1,22 @@
+.DashBoard {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  padding: 0 20px;
+}
+
 .Race {
-  background: radial-gradient(circle at top left, #162447 0, #050810 60%);
+  background: radial-gradient(circle at top left, #6011ff 0, #050810 60%);
   border-radius: 24px;
   padding: 24px;
   color: #f5f7ff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   &_Header {
     display: flex;
     justify-content: space-between;

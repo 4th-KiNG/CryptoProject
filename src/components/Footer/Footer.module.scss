@@ -3,6 +3,9 @@
   background-color: #7b7b7b80;
   margin-top: 160px;
   display: flex;
+  position: relative;
+  width: 100%;
+
   @media (max-width: 768px) {
     margin-top: 80px;
     padding: 20px 18px;
@@ -15,13 +18,23 @@
   width: 100%;
   max-width: 1200px;
   gap: 90px;
+  position: relative;
+  z-index: 5;
+  @media (max-width: 1100px) {
+    gap: 50px;
+  }
+  @media (max-width: 1100px) {
+    gap: 30px;
+  }
 }
 
 .Logo {
-  font-size: 64px;
-  font-weight: 600;
-  @media (max-width: 768px) {
-    font-size: 32px;
+  height: 52px;
+  @media (max-width: 1100px) {
+    height: 32px;
+  }
+  @media (max-width: 550px) {
+    height: 24px;
   }
 }
 
@@ -30,6 +43,9 @@
   gap: 170px;
   @media (max-width: 768px) {
     gap: 36px;
+  }
+  @media (max-width: 550px) {
+    gap: 12px;
   }
 }
 
@@ -68,6 +84,60 @@
     font-weight: 500;
     @media (max-width: 768px) {
       font-size: 12px;
+    }
+  }
+}
+
+.Blur {
+  background: #6011ff;
+  border-radius: 90px;
+  filter: blur(300px);
+  flex-shrink: 0;
+  height: 600px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transform: translateY(70%);
+  width: 100vw;
+  z-index: 0;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.Buttons {
+  display: flex;
+  gap: 20px;
+  &_Primary {
+    padding: 20px 32px;
+    background-color: #894eff;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 22px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  &_Secondary {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: 0;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 14px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 10px 20px;
     }
   }
 }

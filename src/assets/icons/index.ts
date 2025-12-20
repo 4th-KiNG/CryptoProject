@@ -15,6 +15,15 @@ import binance from "./binance.png";
 import bybit from "./bybit.png";
 import kraken from "./kraken.png";
 
+import logo from "./logo.svg";
+import logoIcon from "./logoIcon.svg";
+import twitterLogo from "./twitterLogo.png";
+import telegramLogo from "./telegramLogo.png";
+
+import userIcon from "./user.svg";
+import emailIcon from "./email.svg";
+import passwordIcon from "./password.svg";
+
 export {
   firstGif,
   secondGif,
@@ -29,4 +38,11 @@ export {
   binance,
   bybit,
   kraken,
+  logo,
+  logoIcon,
+  twitterLogo,
+  telegramLogo,
+  userIcon,
+  emailIcon,
+  passwordIcon,
 };
