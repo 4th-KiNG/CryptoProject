@@ -11,8 +11,8 @@ export const Bars: BarProps[] = [
 
 export const CHAINS: Chain[] = [
   {
-    id: "kaspa",
-    name: "Kaspa",
+    id: "xmine",
+    name: "Xmine",
     consensus: "PoW",
     color: "#4de2c6",
     blocksPerSec: 10,
