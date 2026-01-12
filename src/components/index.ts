@@ -19,3 +19,4 @@ export * from "./SocialMedia";
 export * from "./FAQ";
 export * from "./AccordeonList";
 export * from "./Input";
+export * from "./Starfield";
