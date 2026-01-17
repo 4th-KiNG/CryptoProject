@@ -12,16 +12,22 @@
 }
 
 .Blur {
-  background: #6011ff;
-  border-radius: 90px;
-  filter: blur(250px);
+  background-color: #2d0d40;
+  border-radius: 50%;
+  filter: blur(100px);
   flex-shrink: 0;
-  height: 600px;
-  left: 0;
+  height: 680px;
+  left: -130px;
+  top: 220px;
   position: absolute;
   transform: translateY(-70%);
-  width: 100vw;
+  width: 680px;
   z-index: 0;
+  @media (max-width: 768px) {
+    width: 400px;
+    height: 400px;
+    top: 100px;
+  }
 }
 
 .Info {
